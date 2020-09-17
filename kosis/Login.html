@@ -1,0 +1,55 @@
+<html>
+
+<head>
+    <title>Home</title>
+    <link rel="stylesheet" type="text/css" href="all.css">
+    <style>
+        body {
+            background-image: url('csgokosis.jpg');
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="navbar">
+        <div class="logo">
+            <h1>Game Blog</h1>
+        </div>
+        <div class="search-item">
+            <ul class="category">
+                <li class="category-item"><a href="Home.html">HOME</a></li>
+                <li class="category-item"><a href="Gallery.html">Gallery</a></li>
+                <li class="category-item"><a href="Blogs.html">Blogs</a></li>
+                <li class="category-item"><a href="trending.html">Trending</a></li>
+                <li class="category-item"><a href="Contact.html">Contact</a></li>
+                <li class="category-item"><a href="login.html">Login/sign-up</a></li>
+            </ul>
+        </div>
+    </nav>
+    <h3 class="heading">Login</h3>
+
+    <form action="/action_page.php" method="post">
+        <div class="container">
+            <label for="uname"><b>Username</b></label>
+            <input type="text" placeholder="Enter Username" name="uname" required>
+
+            <label for="psw"><b>Password</b></label>
+            <input type="password" placeholder="Enter Password" name="psw" required>
+
+            <button type="submit">Login</button>
+            <label>
+          <input type="checkbox" checked="checked" name="remember"> Remember me
+        </label>
+        </div>
+
+        <div class="container" style="background-color:#f1f1f1">
+            <button type="button" class="cancelbtn">Cancel</button>
+            <span class="psw">Forgot <a href="#">password?</a></span>
+        </div>
+    </form>
+    <div class="footer">
+        <p>Copyright @ kosis</p>
+    </div>
+</body>
+
+</html>

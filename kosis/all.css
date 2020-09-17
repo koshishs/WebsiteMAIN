@@ -1,0 +1,276 @@
+* {
+    font-family: century;
+}
+
+
+/*css for nav */
+
+.logo h1 {
+    color: white;
+    font: normal 26px 'Cookie', cursive;
+}
+
+.navbar {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+}
+
+.navbar .search-item .category {
+    display: flex;
+    justify-content: space-between;
+    justify-content: center;
+    flex-direction: row;
+}
+
+.navbar .search-item .category .category-item {
+    list-style-type: none;
+    padding: 10px;
+}
+
+.category .category-item a {
+    color: #fff;
+    padding: 5px 10px;
+    border: 1px solid #ffffff;
+}
+
+.category .category-item a:hover {
+    background-color: dimgray;
+    transition: 0.8s;
+}
+
+.title {
+    position: absolute;
+    top: 50%;
+    left: 30%;
+    transform: translate(-50%, -50%);
+}
+
+.title h1 {
+    color: #fff;
+    font-size: 70px;
+}
+
+.titlebutton {
+    position: absolute;
+    top: 60%;
+    left: 30%;
+    transform: translate(-50%, -50%);
+}
+
+.btn {
+    border: 1px solid #fff;
+    padding: 10px 30px;
+    color: #fff;
+    background-color: black;
+}
+
+.btn:hover {
+    background-color: dimgray;
+    transition: 0.8s;
+}
+
+
+/*css for blogs */
+
+input[type=text],
+select,
+textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+}
+
+input[type=submit] {
+    background-color: #4CAF50;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+input[type=submit]:hover {
+    background-color: #45a049;
+}
+
+.container {
+    margin-left: 12%;
+    width: 75%;
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 20px;
+}
+
+.heading {
+    padding: 10px;
+    font-size: 50px;
+    text-align: center;
+    color: white;
+}
+
+
+/*css for login and contact*/
+
+input[type=text],
+input[type=password] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+
+button {
+    background-color: burlywood;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+}
+
+button:hover {
+    opacity: 0.8;
+}
+
+.cancelbtn {
+    width: auto;
+    padding: 10px 18px;
+    background-color: #f44336;
+}
+
+.container {
+    padding: 16px;
+}
+
+span.psw {
+    float: right;
+    padding-top: 16px;
+}
+
+
+/*css for trending part */
+
+
+/* Center website */
+
+.main {
+    max-width: 1000px;
+    margin: auto;
+}
+
+h1 {
+    font-size: 50px;
+    word-break: break-all;
+}
+
+.row {
+    margin: 8px -16px;
+}
+
+.row,
+.row>.column {
+    padding: 8px;
+}
+
+.column {
+    float: left;
+    width: 100%;
+}
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.content {
+    background-color: white;
+    padding: 10px;
+}
+
+
+/*css for footer */
+
+.footer {
+    position: relative;
+    padding: 20px;
+    width: 100%;
+    background-color: rgb(66, 62, 62);
+    color: white;
+    text-align: center;
+}
+
+/* css for slider */
+
+@keyframes slider {
+
+    0% {
+        left: 0;
+    }
+    
+    20% {
+        left: 0;
+    }
+    
+    25% {
+        left: -100%;
+    }
+    
+    45% {
+        left: -100%;
+    
+    }
+    
+    50% {
+            left: -200%;
+    
+    }
+    
+    70% {
+        left: -200%;
+    }
+    
+    75% {
+        left: -300%;
+    }
+    
+    95% {
+        left: -300%;
+    }
+    
+    100% {
+        left: -400%;
+    
+    }
+    
+    }
+    
+    #slider {
+        overflow: hidden;
+       
+    }
+    
+    #slider figure img {
+        width: 10%;
+        
+    }
+    
+    #slider figure {
+        position: absolute;
+        width: 500%;
+        margin: 0;
+        left: 0;
+        text-align: left;
+        font-size: 0;
+        animation: 10s slider infinite; 
+    
+    }

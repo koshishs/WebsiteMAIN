@@ -1,0 +1,74 @@
+<html>
+
+<head>
+    <title>Home</title>
+    <link rel="stylesheet" type="text/css" href="all.css">
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+        
+        body {
+            background-image: url('csgokosis.jpg');
+        }
+    </style>
+    <script>
+        function validateform() {
+            var firstname = document.myform.firstname.value;
+            var lastname = document.myform.lastname.value;
+            var country = document.myform.country.value;
+            var subject = document.myform.subject.value;
+
+            if (firstname == "" || lastname == "" || country == "" || subject == "") {
+                alert("please fill all the blanks");
+                return false;
+            }
+        }
+    </script>
+</head>
+
+<body>
+    <nav class="navbar">
+        <div class="logo">
+            <h1>Game Blog</h1>
+        </div>
+        <div class="search-item">
+            <ul class="category">
+                <li class="category-item"><a href="Home.html">HOME</a></li>
+                <li class="category-item"><a href="Gallery.html">Gallery</a></li>
+                <li class="category-item"><a href="Blogs.html">Blogs</a></li>
+                <li class="category-item"><a href="trending.html">Trending</a></li>
+                <li class="category-item"><a href="Contact.html">Contact</a></li>
+                <li class="category-item"><a href="login.html">Login/sign-up</a></li>
+            </ul>
+        </div>
+    </nav>
+    <h3 class="heading">Contact Us</h3>
+    <div class="container">
+        <form name="myform" action="/action_page.php" onsubmit="return validateform()">
+            <label for="fname">First Name</label>
+            <input type="text" id="fname" name="firstname" placeholder="Your name..">
+
+            <label for="lname">Last Name</label>
+            <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+
+            <label for="country">Country</label>
+            <select id="country" name="country">
+      <option value="australia">Australia</option>
+      <option value="canada">Canada</option>
+      <option value="usa">USA</option>
+      <option value="nepal">Nepal</option>
+    </select>
+
+            <label for="subject">Subject</label>
+            <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+
+            <input type="submit" value="Submit">
+        </form>
+    </div>
+    <div class="footer">
+        <p>Copyright @ kosis</p>
+    </div>
+</body>
+
+</html>
